@@ -1,4 +1,4 @@
-class MainController {
+class MainCtrl {
   constructor ($timeout, webDevTec, toastr) {
     'ngInject';
 
@@ -31,4 +31,4 @@ class MainController {
   }
 }
 
-export default MainController;
+export default MainCtrl;

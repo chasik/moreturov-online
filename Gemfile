@@ -1,12 +1,14 @@
 source 'https://rubygems.org'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', github: 'rails/rails'
-gem 'rack', github: 'rack/rack'
-gem 'arel', github: 'rails/arel'
-gem 'sprockets-rails', github: 'rails/sprockets-rails'
-gem 'sprockets', github: 'rails/sprockets'
-gem 'actioncable', github: 'rails/actioncable'
+gem 'rails'
+# gem 'rails', github: 'rails/rails'
+# gem 'rack', github: 'rack/rack'
+# gem 'arel', github: 'rails/arel'
+# gem 'sprockets-rails', github: 'rails/sprockets-rails'
+# gem 'sprockets', github: 'rails/sprockets'
+gem 'actioncable'
+# gem 'actioncable', github: 'rails/actioncable'
+gem 'rails-api', github: 'rails-api/rails-api'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -32,7 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-gem 'puma'
+# gem 'puma', github: 'puma/puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -56,3 +58,7 @@ end
 group :test do
   gem 'shoulda-matchers'
 end
+
+
+gem 'devise_token_auth', github: 'lynndylanhurley/devise_token_auth'
+gem 'omniauth'

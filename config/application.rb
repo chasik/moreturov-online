@@ -8,6 +8,10 @@ Bundler.require(*Rails.groups)
 
 module Moreturov
   class Application < Rails::Application
+    # Rails-API If you want to use the Rails default middleware stack
+    # (avoid the reduction that rails-api does), you can just
+    # add config.api_only = false to config/application.rb file.
+    config.api_only = false
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
