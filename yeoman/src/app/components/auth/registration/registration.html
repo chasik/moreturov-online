@@ -1,20 +1,53 @@
-<h3>Регистрация</h3>
-<p>Создайте аккаунт, что бы воспользоваться нашим сервисом...</p>
-<form class="m-t" ng-submit="submitRegistration(registrationForm)" role="form" >
-    <div class="form-group">
-        <input type="text" ng-model="registrationForm.username" class="form-control" placeholder="Имя" required="">
-    </div>
-    <div class="form-group">
-        <input type="email" ng-model="registrationForm.email" class="form-control" placeholder="Email" required="">
-    </div>
-    <div class="form-group">
-        <input type="password" ng-model="registrationForm.password" class="form-control" placeholder="Пароль" required="">
-    </div>
-    <div class="form-group">
-        <input type="password" ng-model="registrationForm.confirm_password" class="form-control" placeholder="Повтор пароля" required="">
-    </div>
-    <button type="submit" class="btn btn-primary block full-width m-b">Регистрация</button>
+<div class="animated fadeInDown">
+  <div id="login-page" class="row">
+    <div class="col s12 z-depth-4 card-panel">
+      
+      <form class="login-form" ng-submit="submitRegistration(registrationForm)" role="form">
+        <div class="row margin">
+          <div class="input-field col s12 center">
+            <img src="/app/assets/images/auth-logo.svg" alt="" class="responsive-img valign profile-image-login">
+            <p class="center login-form-text">С нами выгоднее!</p>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input ng-model="registrationForm.username" id="username" type="text">
+            <label for="username" class="center-align">Имя</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-communication-email prefix"></i>
+            <input ng-model="registrationForm.email" id="email" type="text">
+            <label for="email" class="center-align">Email</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input ng-model="registrationForm.password" id="password" type="password">
+            <label for="password">Пароль</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input ng-model="registrationForm.confirm_password" id="password-confirm" type="password">
+            <label for="password-confirm">Повторите пароль</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <a href="index.html" class="btn btn-auth waves-effect waves-light col s12">Зарегистрироваться</a>
+          </div>
+          <div class="input-field col s12">
+            <p class="margin center medium-small sign-up">Вы уже регистрировались? <a ui-sref="auth.login"> Вход</a></p>
+          </div>
+        </div>
+      </form>
 
-    <p class="text-muted text-center"><small>Уже есть аккаунт?</small></p>
-    <a class="btn btn-sm btn-white btn-block" href="login.html">Вход</a>
-</form>
+    </div>
+  </div>
+  <div class="hiddendiv common"></div>
+</div>
