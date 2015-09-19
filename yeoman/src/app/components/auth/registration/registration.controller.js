@@ -11,10 +11,10 @@ class RegistrationCtrl {
         this._$auth.submitLogin({
           email: this.registrationForm.email,
           password: this.registrationForm.password
-        })
+        });
       })
       .catch(function(resp) {
-        console.log(resp);
+
       });
   }
 }

@@ -8,7 +8,7 @@ gem 'rails'
 # gem 'sprockets', github: 'rails/sprockets'
 gem 'actioncable'
 # gem 'actioncable', github: 'rails/actioncable'
-gem 'rails-api', github: 'rails-api/rails-api'
+# gem 'rails-api', github: 'rails-api/rails-api'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -33,7 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 gem 'puma', github: 'puma/puma'
 
 # Use Capistrano for deployment
