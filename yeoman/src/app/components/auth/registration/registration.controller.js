@@ -1,7 +1,8 @@
 class RegistrationCtrl {
-  constructor ($auth) {
+  constructor ($auth, $state) {
     'ngInject';
     this._$auth = $auth;
+    this._$state = $state;
     this.registrationForm = {};
   }
 

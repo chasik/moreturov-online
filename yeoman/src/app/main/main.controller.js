@@ -1,11 +1,10 @@
 class MainCtrl {
-  constructor ($timeout, webDevTec, toastr) {
+  constructor ($timeout, webDevTec) {
     'ngInject';
 
     this.awesomeThings = [];
     this.classAnimation = '';
     this.creationDate = 1441909218109;
-    this.toastr = toastr;
 
     this.activate($timeout, webDevTec);
   }
@@ -25,10 +24,6 @@ class MainCtrl {
     });
   }
 
-  showToastr() {
-    this.toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-    this.classAnimation = '';
-  }
 }
 
 export default MainCtrl;

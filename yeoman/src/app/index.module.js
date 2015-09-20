@@ -1,4 +1,4 @@
-/* global malarkey:false, toastr:false, moment:false */
+/* global malarkey:false, moment:false */
 import config from './index.config';
 
 import routerConfig from './index.route';
@@ -19,7 +19,6 @@ import MalarkeyDirective from '../app/components/malarkey/malarkey.directive';
 
 angular.module('moreturov', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap', 'ng-token-auth'])
   .constant('malarkey', malarkey)
-  .constant('toastr', toastr)
   .constant('moment', moment)
 
   .config(config)
