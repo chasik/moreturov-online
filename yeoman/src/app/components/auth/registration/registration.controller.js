@@ -8,10 +8,11 @@ class RegistrationCtrl {
   handleRegBtnClick() {
     this._$auth.submitRegistration(this.registrationForm)
       .then( (resp) => {
-        this._$auth.submitLogin({
-          email: this.registrationForm.email,
-          password: this.registrationForm.password
-        });
+        this._$state.go('auth.login');
+        // this._$auth.submitLogin({
+        //   email: this.registrationForm.email,
+        //   password: this.registrationForm.password
+        // });
       })
       .catch(function(resp) {
 

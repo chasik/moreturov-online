@@ -12,9 +12,24 @@ Rails.application.configure do
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
+  config.action_controller.action_on_unpermitted_parameters = :log #:raise
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+  # Devise
+  config.action_mailer.default_url_options = { :host => 'localhost:3000/api' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default :charset => "utf-8"
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: ENV["gmail_domain"],
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV["gmail_username"],
+    password: ENV["gmail_password"]
+  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

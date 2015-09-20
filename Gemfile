@@ -20,6 +20,9 @@ gem 'pg'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
+# gem 'dotenv-rails', github: 'bkeepers/dotenv', require: 'dotenv/rails-now'
+gem 'figaro', github: 'laserlemon/figaro'
+
 # Use jquery as the JavaScript library
 # gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -45,6 +48,7 @@ group :development, :test do
   gem 'byebug'
   # gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'pry'
 end
 
 group :development do
@@ -61,4 +65,5 @@ end
 
 
 gem 'devise_token_auth', github: 'lynndylanhurley/devise_token_auth'
+gem 'devise-i18n', github: 'tigrish/devise-i18n'
 gem 'omniauth'

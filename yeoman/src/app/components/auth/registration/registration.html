@@ -1,8 +1,8 @@
 <div class="animated fadeInDown">
   <div id="login-page" class="row">
     <div class="col s12 z-depth-4 card-panel">
-      
-      <form class="login-form" ng-submit="submitRegistration(registrationForm)" role="form">
+
+      <form class="login-form" ng-submit="registration.handleRegBtnClick()" role="form">
         <div class="row margin">
           <div class="input-field col s12 center">
             <img src="/app/assets/images/auth-logo.svg" alt="" class="responsive-img valign profile-image-login">
@@ -12,34 +12,34 @@
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-social-person-outline prefix"></i>
-            <input ng-model="registrationForm.username" id="username" type="text">
-            <label for="username" class="center-align">Имя</label>
+            <input ng-model="registration.registrationForm.name" id="name" type="text">
+            <label for="name" class="center-align">Имя</label>
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-communication-email prefix"></i>
-            <input ng-model="registrationForm.email" id="email" type="text">
+            <input ng-model="registration.registrationForm.email" id="email" type="text">
             <label for="email" class="center-align">Email</label>
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
-            <input ng-model="registrationForm.password" id="password" type="password">
+            <input ng-model="registration.registrationForm.password" id="password" type="password">
             <label for="password">Пароль</label>
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
-            <input ng-model="registrationForm.confirm_password" id="password-confirm" type="password">
-            <label for="password-confirm">Повторите пароль</label>
+            <input ng-model="registration.registrationForm.password_confirmation" id="password_confirmation" type="password">
+            <label for="password_confirmation">Повторите пароль</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <a href="index.html" class="btn btn-auth waves-effect waves-light col s12">Зарегистрироваться</a>
+            <button type="submit" class="btn btn-auth waves-effect waves-light col s12">Зарегистрироваться</button>
           </div>
           <div class="input-field col s12">
             <p class="margin center medium-small sign-up">Вы уже регистрировались? <a ui-sref="auth.login"> Вход</a></p>
