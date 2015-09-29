@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/lynndylanhurley/devise_token_auth.git
-  revision: 76da2da446d8fd65a4a2e9cd46b7dff5cbf1b009
+  revision: 2a3cb88c9b893a756aebd80d18d29d84a6f94ecb
   specs:
     devise_token_auth (0.1.34)
       devise (~> 3.5.2)
@@ -110,7 +110,7 @@ GEM
     method_source (0.8.2)
     mime-types (2.6.2)
     mini_portile (0.6.2)
-    minitest (5.8.0)
+    minitest (5.8.1)
     multi_json (1.11.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -119,7 +119,7 @@ GEM
       rack (~> 1.0)
     orm_adapter (0.5.0)
     pg (0.18.3)
-    pry (0.10.1)
+    pry (0.10.2)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
@@ -163,8 +163,8 @@ GEM
       activesupport (>= 3.0.0)
     slop (3.6.0)
     spring (1.4.0)
-    sprockets (3.3.4)
-      rack (~> 1.0)
+    sprockets (3.3.5)
+      rack (> 1, < 3)
     sprockets-rails (2.3.3)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
