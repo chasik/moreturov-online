@@ -1,0 +1,14 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#moreturovImg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: no-repeat;
+	background-image: url('../www_img/imgmoreturov.jpg');
+	background-size: 100%;
+	background-position: center top;	
+}
