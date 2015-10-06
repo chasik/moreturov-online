@@ -12,6 +12,10 @@ function routerConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
         }
       }
     })
+    .state('main.search', {
+      url: 'search',
+      templateUrl: 'app/components/search/search.html',
+    })
     .state('auth', {
       url: '/auth/',
       templateUrl: 'app/components/auth/auth.html',

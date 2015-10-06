@@ -11,6 +11,8 @@ import LoginCtrl from './components/auth/login/login.controller';
 import RegistrationCtrl from './components/auth/registration/registration.controller';
 import ForgotpassCtrl from './components/auth/forgotpass/forgotpass.controller';
 
+// ui-directives
+import LeftMenuDirective from './components/ui-directives/left-menu.directive';
 
 import GithubContributorService from '../app/components/githubContributor/githubContributor.service';
 import WebDevTecService from '../app/components/webDevTec/webDevTec.service';
@@ -39,4 +41,6 @@ angular.module('more', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.r
 
 .directive('perfectScrollbar', PerfectScrollbarDirective.createInstance)
 .directive('acmeNavbar', () => new NavbarDirective())
-.directive('acmeMalarkey', () => new MalarkeyDirective(malarkey));
+.directive('acmeMalarkey', () => new MalarkeyDirective(malarkey))
+
+.directive('leftMenu', LeftMenuDirective.createInstance);

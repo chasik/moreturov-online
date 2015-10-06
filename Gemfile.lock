@@ -1,4 +1,17 @@
 GIT
+  remote: git://github.com/CanCanCommunity/cancancan.git
+  revision: cf921a505b6d0ec53852299eedb43ff6fb21557b
+  branch: develop
+  specs:
+    cancancan (1.12.0)
+
+GIT
+  remote: git://github.com/RolifyCommunity/rolify.git
+  revision: 99d886e8c5ba2f554f1c3573fcd91575a16dd3e5
+  specs:
+    rolify (4.1.1)
+
+GIT
   remote: git://github.com/laserlemon/figaro.git
   revision: 5191084e16cf5cd5c2cc8a98df9071dbac9b4cba
   specs:
@@ -21,7 +34,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/web-console.git
-  revision: 72f14664dfbeeb1fe65d34acdec36bd94a95a4d5
+  revision: ca5fa48aa410d40788b1eaeb11941adf3b4e4a08
   specs:
     web-console (3.0.0)
       activemodel (>= 4.0)
@@ -163,7 +176,7 @@ GEM
       activesupport (>= 4.0.0)
     slop (3.6.0)
     spring (1.4.0)
-    sprockets (3.3.5)
+    sprockets (3.4.0)
       rack (> 1, < 3)
     sprockets-rails (2.3.3)
       actionpack (>= 3.0)
@@ -189,6 +202,7 @@ PLATFORMS
 DEPENDENCIES
   actioncable
   byebug
+  cancancan!
   devise-i18n!
   devise_token_auth!
   factory_girl_rails
@@ -199,6 +213,7 @@ DEPENDENCIES
   pry
   puma!
   rails
+  rolify!
   sdoc (~> 0.4.0)
   shoulda-matchers
   spring

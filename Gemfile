@@ -63,7 +63,9 @@ group :test do
   gem 'shoulda-matchers'
 end
 
-
 gem 'devise_token_auth', github: 'lynndylanhurley/devise_token_auth'
 gem 'devise-i18n', github: 'tigrish/devise-i18n'
 gem 'omniauth'
+
+gem 'cancancan', github: 'CanCanCommunity/cancancan', branch: 'develop'
+gem 'rolify', github: 'RolifyCommunity/rolify'
